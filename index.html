@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğal Taşlar </title>
+    <link rel="stylesheet" href="div.css">
+</head>
+<body>
+    <div id="container">
+        <header><img id="res" src="res/Başlıksız-1.jpg" alt=""></header>
+        <nav bgcolor="red">
+            <ul>
+                <li><a href="site.html">ANASAYFA</a></li>
+                    <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+                    <li><a href="takilar.html">Takılar</a>
+                      <ul>
+                        <li><a href="#">küpe</a></li>
+                        <li><a href="#">kolye</a></li>
+                        <li><a href="#">bileklik</a></li>
+                        <li><a href="#">halhal</a></li>
+                      </ul>
+                      <li><a href="dogaltas.html">Doğal Taşlar Hakkında</a></li>
+                      <ul>
+                        <li><a href="#">Sedef</a></li>
+                        <li><a href="#">Lapis</a></li>
+                        <li><a href="#">Opsidyen</a></li>
+                        <li><a href="#">Kuvars</a></li>
+                        <li><a href="#">Firuze</a></li>
+                        <li><a href="#">pembe Kuvars</a></li>
+                        <li><a href="#">sitrin taşı</a></li>
+                        <li><a href="#">larvakit</a></li>
+                        <li><a href="#">sodalit</a></li>
+                        <li><a href="#">kristal Kuvars</a></li>
+                        <li><a href="#">hematit</a></li>
+                        <li><a href="#">gül kuvars</a></li>
+                      </ul>
+                      
+                    <li><a href="iletisim.html">İletişim</a></li>
+                
+                  </ul>
+        </nav>
+        <article>
+          
+          
+          <aside><div class="slider-container">
+            <div class="slides">
+              <div class="slide">
+                <img class="tas" src="res/4dogaltaslaretkileri-15032023c07b6a51.jpg" alt="Slide 1">
+              </div>
+              <div class="slide">
+                <img class="tas" src="res/5c6fbab2ae784922c4eb832e.webp" alt="Slide 2">
+              </div>
+              <div class="slide">
+                <img class="tas" src="res/1-24-780x470.jpg" alt="Slide 3">
+              </div>
+            </div>
+          
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+          </div>
+          
+          <script>
+            let currentSlide = 0;
+          
+            function changeSlide(n) {
+              const slides = document.querySelector('.slides');
+              const totalSlides = document.querySelectorAll('.slide').length;
+          
+              currentSlide = (currentSlide + n + totalSlides) % totalSlides;
+          
+              const transformValue = -currentSlide * 100 + '%';
+              slides.style.transform = 'translateX(' + transformValue + ')';
+            }
+          </script></aside>
+        </article>
+        
+    </div>
+</body>
+</html>

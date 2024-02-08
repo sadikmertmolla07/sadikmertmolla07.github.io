@@ -1,0 +1,137 @@
+body{
+    font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+}
+#container{
+    width: 700px;
+    height: 800px;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid blue;
+}
+.na{
+    background-color: lightblue;
+    border :1px dashed blue;
+    color: orange;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+nav{
+    width: 200px;
+    height: 398px;
+    margin-right: 10px;
+    float: left;
+}
+article{
+    width: 485px;
+    height: 288px;
+    margin-top: 10px;
+    float: right;
+}
+header{
+
+    width: 487px;
+    height: 100px;
+    float: right;
+}   
+    ul {
+        list-style-type: none;
+ 
+        margin: 0; 
+        padding: 0; 
+        width: 200px; 
+        background-color: purple;
+    
+    }
+ ul li{
+      position:relative;
+    }
+ li a {
+        display: block;
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+        border:1px solid silver;
+}
+    
+li a:hover {
+    
+        background-color: green; 
+        color: white;
+ }
+    
+li:hover ul{ 
+    display:block;
+}
+    
+ul li ul li{
+      position:absolute;
+      left:200px; 
+      top:0; 
+      display:none;
+}
+img{
+        width: 487px;
+        height: 100px;   
+ }
+aside{
+    width: 487px;
+    height: 690px;
+    background-color: bisque;
+    
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    background-color: #ddd;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: #555;
+    color: #fff;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
